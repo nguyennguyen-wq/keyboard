@@ -25,7 +25,6 @@ void MainWindow::keyboardButtonClicked()
             if (!currentText.isEmpty()) {
                 currentText.chop(1); 
                 lineEdit->setText(currentText);
-                listWidget->addItem("Backspace");
             }
             return;
         }
@@ -37,7 +36,6 @@ void MainWindow::keyboardButtonClicked()
         }
 
         lineEdit->insert(buttonText);
-        listWidget->addItem(buttonText);
     }
 }
 
@@ -52,7 +50,6 @@ void MainWindow::setupUI()
     QFont font("Arial", 12); 
     lineEdit->setFont(font);
     mainLayout->addWidget(lineEdit);
-    listWidget = new QListWidget();
     keyboardLayout = new QGridLayout();
     mainLayout->addLayout(keyboardLayout);
 }
