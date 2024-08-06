@@ -2,7 +2,7 @@
 MainWindow::MainWindow(QWidget *parent) 
     : QMainWindow(parent)
 {
-    setupUI();
+    setupUI(); 
     setupKeyboard();
 }
 
